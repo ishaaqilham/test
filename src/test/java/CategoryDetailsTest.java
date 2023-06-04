@@ -47,7 +47,6 @@ public class CategoryDetailsTest {
                 "Description for Gallery promotions is not correct");
 
         softAssert.assertAll();
-
     }
 
 }
