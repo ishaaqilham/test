@@ -10,9 +10,6 @@ public class ReadPropertyFile {
     FileInputStream fileInputStream;
     private static String defaultFilePath = System.getProperty("user.dir") + "/src/main/resources/config.properties";
 
-    private ReadPropertyFile() {
-
-    }
     public void loadPropertyFile() {
         properties = new Properties();
         try {

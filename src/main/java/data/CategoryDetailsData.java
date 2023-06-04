@@ -11,18 +11,16 @@ import java.io.IOException;
 
 @Getter
 @Setter
-public class DetailsData {
+public class CategoryDetailsData {
 
     private String catalogue;
-    private String apiVersion;
 
-    public DetailsData(String fileName) throws IOException, ParseException {
+    public CategoryDetailsData(String fileName) throws IOException, ParseException {
         JSONParser jsonParser = new JSONParser();
         FileReader reader = new FileReader(fileName);
         JSONObject detailsJsonData = (JSONObject) jsonParser.parse(reader);
 
         this.catalogue = detailsJsonData.get("catalogue").toString();
-        this.apiVersion = detailsJsonData.get("apiVersion").toString();
 
     }
 
