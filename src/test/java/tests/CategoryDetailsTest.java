@@ -1,4 +1,4 @@
-import static io.restassured.RestAssured.*;
+package tests;
 
 import common.Constants;
 import common.ResponseCodes;
@@ -11,12 +11,15 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
+import static io.restassured.RestAssured.given;
+
 public class CategoryDetailsTest {
     SoftAssert softAssert;
     JSONObject jsonObject;
 
-    @Test
-    public void testGetCategoryDetails() throws IOException, ParseException {
+    @Test(description = "Verify retrieval of category details", alwaysRun = true, priority = 1,
+            groups = {"CategoryDetails"})
+    public void testGetValidCategoryDetails() throws IOException, ParseException {
         softAssert = new SoftAssert();
 
         CategoryDetailsData categoryDetailsData =
