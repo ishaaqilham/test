@@ -1,5 +1,3 @@
-package tests;
-
 import common.Constants;
 import common.ResponseCodes;
 import data.CategoryDetailsData;

@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-           <class name="tests.CategoryDetailsTest"></class>
+           <class name="CategoryDetailsTest"></class>
         </classes>
     </test>
 </suite>

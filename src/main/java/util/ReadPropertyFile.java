@@ -29,8 +29,4 @@ public class ReadPropertyFile {
 
         return properties.getProperty(propertyKey);
     }
-
-
-
-
 }
