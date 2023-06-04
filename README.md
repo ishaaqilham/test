@@ -20,7 +20,7 @@
 ## Build the project
 * Below command could be used to build the project:
   ```bash
-  mvn clean test -DskipTests=true
+  mvn clean install -DskipTests=true
   ```
 
 ## Test suites
